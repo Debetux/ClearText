@@ -7,6 +7,7 @@ class ClearText{
 	/** REGEX **/
 	private $regex_title = '#<title.*>(.*)</title>#';
 	private $regex_content = '#<div.*class="post-content".*>(.*)</div>#';
+	private $regex_class = 'post|content';
 	private $meta_chars = array('#', '!', '^', '$', '(', ')', '[', ']', '{', '}', '?', '+', '*', '.', '\\', '|');
 	private $meta_chars_remplacement = array('\\#', '\\!', '\\^', '\\$', '\\(', '\\)', '\\[', '\\]', '\\{', '\\}', '\\?', '\\+', '\\*', '\\.', '\\\\', '\|');
 	
